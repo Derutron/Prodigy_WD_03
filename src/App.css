@@ -1,0 +1,71 @@
+/* src/App.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    border: solid 5px black;
+    grid-gap: 5px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .cell.X {
+    color: #0089e4;
+  }
+  
+  .cell.O {
+    color: #e91700;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  button {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
